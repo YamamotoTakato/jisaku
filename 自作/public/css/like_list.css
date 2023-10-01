@@ -1,0 +1,50 @@
+/* 共通のナビゲーションバー */
+.nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* いいね一覧のタイトル */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+/* いいねした投稿のリスト */
+.like-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+/* 個々のいいねした投稿 */
+.like-item {
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    width: calc(33.33% - 20px); /* 3列にするために幅を調整 */
+}
+
+/* 投稿の画像 */
+.like-item img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* 投稿のタイトル */
+.like-item p {
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

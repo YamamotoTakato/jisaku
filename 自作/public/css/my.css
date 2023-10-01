@@ -1,0 +1,194 @@
+body {
+    background-color: rgb(112, 112, 113);
+}
+
+.mynav{
+    width: 100%;
+    min-height: 10vh;
+    object-fit: cover;
+    color: aliceblue;
+}
+
+.nav_text1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+        4px 4px 10px rgba(0, 0, 0, 0.8),
+        -2px -2px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.nav_text1 div {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+}
+
+.img {
+    border: 1px solid #060606;
+    width: 20%;
+    height: 100%;
+    /* background-image: url("/img/top.jpg"); */
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mypage {
+    border: 5px solid aliceblue;
+    height: 60vh;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    position: relative;
+}
+
+.mybody {
+    max-width: 100%;
+}
+
+.mybody p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+    border: 1px solid aliceblue;
+    margin: 20px;
+}
+
+.body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+    border: 1px solid aliceblue;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.displayText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: aliceblue;
+}
+img{
+    width: 100%;
+}
+
+
+
+/**********************/
+/* Common navigation bar */
+
+
+.post-container {
+    display: flex;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+.post-thumbnail {
+    flex: 0.3;
+    padding: 10px;
+}
+
+.post-image {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.post-content {
+    flex: 0.7;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 200px !important; /* 要素の高さを固定 */
+}
+
+.post-content h3 {
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* タイトルがはみ出た場合に省略表示 */
+    white-space: nowrap;
+}
+
+.post-description {
+    flex-grow: 1;
+    overflow: auto; /* 文章が多い投稿は要素内でスクロール可能に */
+}
+
+.delete-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.edit-button {
+    background-color: rgb(82, 55, 190);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: flex-end;
+    max-height: 35px;
+    align-self: flex-end; /* これを追加 */
+    margin-top: auto;
+    
+
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+.parent-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#image-preview{
+    max-height: 200px;
+    object-fit: cover;
+}
+#modal-title{
+    width: 100%;
+}
+#modal-content{
+    width: 100%;
+}
+.modal-content{
+    height: 90vh;
+}
+textarea {
+    height: 140px;
+}

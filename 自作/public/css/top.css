@@ -1,0 +1,301 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #ffffff !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Body */
+.TopBody {
+    background-image: url('../img/top.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+/* Navigation */
+.mynav {
+    width: 100%;
+    min-height: 10vh;
+    object-fit: cover;
+    color: aliceblue;
+    justify-content: center;
+}
+
+.nav_text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -2px -2px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.nav_text div {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+}
+
+/* Posts */
+.post {
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: aliceblue;
+    height: 20vh;
+}
+
+.post-username {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Post Button */
+.post-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 2%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #3490dc;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.post-button:hover {
+    background-color: #2c7ed8;
+}
+
+/* Modal Content */
+.modal-content {
+    height: 90vh;
+}
+
+/* Post Body */
+.postbody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.PostImg {
+    flex: 0.3;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.PostContents {
+    flex: 0.7;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.PostContents > div:nth-child(1) { flex: 0.1; }
+.PostContents > div:nth-child(2) { flex: 0.6; }
+
+/* Input Fields */
+input[type="file"] { display: block; margin: auto; }
+input[type="text"], textarea { flex-grow: 1; width: 100%; height: 100%; }
+
+/* Image Preview */
+#image-preview {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 統合後のスタイル */
+.post-button.neon-button {
+    border: none !important;
+    background-color: #4c5fbe !important;
+    color: #faf9fa !important;
+    font-size: 16px !important;
+    border-radius: 5px !important;
+    z-index: 0 !important;
+    cursor: pointer !important;
+    transition: all 0.5s ease !important;
+    overflow: hidden !important;
+    outline: none !important;
+
+    position: fixed !important;  /* 位置関連のスタイル */
+    bottom: 2% !important;
+    right: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+.post-button.neon-button:after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    padding-top: 300% !important;
+    padding-left: 350% !important;
+    margin-left: -20px !important;
+    margin-top: -120% !important;
+    opacity: .4 !important;
+    transition: all 0.5s ease !important;
+    pointer-events: none !important;
+    z-index: -1 !important;
+}
+
+.post-button.neon-button:active:after {
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: .2 !important;
+    transition: 0s !important;
+}
+
+.post-button.neon-button:hover {
+    color: #3fe016 !important;
+    background-color: #f0f !important;
+    box-shadow: 0 0 5px #f0f, 0 0 25px #f0f, 0 0 50px #f0f, 0 0 100px #f0f !important;
+}
+
+.post-button.neon-button:hover:active {
+    box-shadow: 0 0 5px #f0f, 0 0 15px #f0f, 0 0 30px #f0f, 0 0 75px #f0f !important;
+}
+
+
+/* Custom Posts */
+.custom-post {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: aliceblue;
+    height: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.post-thumbnail {
+    flex: 0.3;
+    padding: 10px;
+}
+
+.post-thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.post-info {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.post-header {
+    flex: 0.1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.post-description {
+    flex: 0.9;
+    font-size: 16px;
+}
+input[type="file"] {
+    height: 200px;
+}
+
+.like-button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: aliceblue;
+    outline: none!important;
+}
+.like-button:active {
+    outline: none!important;
+    border: none;
+}
+button{
+    outline: none;
+}
+
+/*これ画像につける
+max-height: 200px;
+    object-fit: cover;*/
+textarea {
+    height: 140px;
+}
+select{
+    color:aliceblue;
+    background-color: #e34ba4;
+    
+}
+.post-header {
+    color: black;
+    font-weight: bold;
+}
+.post-description {
+    flex: 0.9;
+    color: black;
+    font-size: 16px;
+}
+#genreSelect {
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.post-author {
+    font-weight: bold;
+    color: #333;
+    background-color:black;
+    text-align: center;
+}
+
+.black-text {
+    color: black　!important;
+}
+.modal-header{
+    color: black;
+}

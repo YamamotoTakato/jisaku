@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(112, 112, 113);
+}
+
+.nav {
+    width: 100%;
+    min-height: 10vh;
+    object-fit: cover;
+    color: aliceblue;
+}
+
+.nav_text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+        4px 4px 10px rgba(0, 0, 0, 0.8),
+        -2px -2px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.nav_text div {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+}
+
+.img {
+    border: 1px solid rgb(112, 112, 113);
+    width: 20%;
+    height: 20vh;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mypage {
+    border: 5px solid aliceblue;
+    height: 60vh;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+
+.mybody {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.mybody label, .mybody input, .mybody textarea {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+    border: 1px solid aliceblue;
+    
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}

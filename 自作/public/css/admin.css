@@ -1,0 +1,73 @@
+/* スタイルのリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* テーブル全体のスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* テーブルヘッダーのスタイル */
+thead th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* テーブルセルのスタイル */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #3490dc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2072b0;
+}
+.post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    flex: 0.3;
+    margin-right: 10px;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-info {
+    flex: 0.7;
+}
+
+.post-info h3 {
+    margin-top: 0;
+}
+
+.post-info p {
+    margin-bottom: 0;
+}
